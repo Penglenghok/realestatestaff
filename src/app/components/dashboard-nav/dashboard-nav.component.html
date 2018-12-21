@@ -1,0 +1,320 @@
+<nav class="nav-header">
+  <div class="app-container">
+      <div class="brand-name" [routerLink]="['/']">
+          <img src="https://firebasestorage.googleapis.com/v0/b/puconline-c176c.appspot.com/o/logo%2FLogo-PUC-Final-01.png?alt=media&token=938f845e-a46b-454d-9d9a-69ee2f4c1d03"/>
+          <span>PUC Cloud</span>
+      </div>
+      <div class="anchor-nav">
+
+      </div>
+      <button mat-icon-button [matMenuTriggerFor]="menuapp" class="cs-mat-menu-item">
+        <mat-icon>apps</mat-icon>
+      </button>
+
+      <mat-menu #menuapp="matMenu" class="cs-matmenu-content auto" backdropClass="cs-matmenu-backdrop">
+          <div class="mat-menu-body no-scroll">
+              <mat-list>
+                  <mat-list-item>
+                      <mat-icon mat-list-icon class="app-icon">play_circle_filled_white</mat-icon>
+                      <div mat-line class="d-flex">
+                          PUC TV
+                      </div>
+                  </mat-list-item>
+                  <mat-divider></mat-divider>
+                  <mat-list-item>
+                      <mat-icon mat-list-icon class="app-icon">payment</mat-icon>
+                      <div mat-line class="d-flex">
+                              PUC Music
+                      </div>
+                  </mat-list-item>
+                  <mat-list-item>
+                      <mat-icon mat-list-icon class="app-icon">settings_system_daydream</mat-icon>
+                      <div mat-line class="d-flex">
+                              PUC Kids
+                      </div>
+                  </mat-list-item>
+                  <mat-divider></mat-divider>
+                  <mat-list-item>
+                      <mat-icon mat-list-icon class="app-icon">account_balance_wallet</mat-icon>
+                      <div mat-line class="d-flex">
+                          Academy
+                      </div>
+                  </mat-list-item>
+                  <mat-list-item>
+                      <mat-icon mat-list-icon class="app-icon">donut_small</mat-icon>
+                      <div mat-line class="d-flex">
+                              PUC Artists
+                      </div>
+                  </mat-list-item>
+              </mat-list>
+          </div>
+      </mat-menu>
+
+      <button mat-icon-button [matMenuTriggerFor]="menumsg" class="cs-mat-menu-item">
+        <mat-icon>mail</mat-icon>
+      </button>
+
+      <mat-menu #menumsg="matMenu" class="cs-matmenu-content" backdropClass="cs-matmenu-backdrop">
+          <div class="mat-menu-bar" (click)="$event.stopPropagation();">
+              <h3 class="m-title">Messages</h3>
+              <!-- <button mat-icon-button>
+                <mat-icon aria-label="settings">settings</mat-icon>
+              </button> -->
+              <!-- <a class="m-link">Friends</a> -->
+          </div>
+          <div class="mat-menu-body">
+              <!-- <mat-list>
+                  <mat-list-item>
+
+                      <div mat-line class="d-flex">
+                          <div class="m-icon">
+                              <img src="https://lh5.googleusercontent.com/-dgVHb2eFVcQ/AAAAAAAAAAI/AAAAAAAAAAA/r1Ki2m6hU2k/s96-c-mo/photo.jpg" alt="">
+                          </div>
+                          <div class="m-info">
+                              <h4 class="info-title">Lorem ipsum dolor sit.</h4>
+                              <p class="info-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate? </p>
+                              <p class="info-date">Oct 24 2018</p>
+                          </div>
+                      </div>
+                      <div (click)="$event.stopPropagation();">
+                          <mat-menu #moreMenu="matMenu">
+                              <button mat-menu-item>Settings</button>
+                              <button mat-menu-item>Help</button>
+                          </mat-menu>
+
+                          <button mat-icon-button [matMenuTriggerFor]="moreMenu" class="more-menu">
+                            <mat-icon>more_vert</mat-icon>
+                          </button>
+                      </div>
+                  </mat-list-item>
+              </mat-list> -->
+              <p class="text-center p-4">No Messages</p>
+          </div>
+      </mat-menu>
+
+      <button mat-icon-button [matMenuTriggerFor]="menunoti" class="cs-mat-menu-item">
+        <mat-icon>notifications</mat-icon>
+      </button>
+
+      <mat-menu #menunoti="matMenu" class="cs-matmenu-content" backdropClass="cs-matmenu-backdrop">
+          <div class="mat-menu-bar" (click)="$event.stopPropagation();">
+              <h3 class="m-title">Notifications</h3>
+              <button mat-icon-button>
+                <mat-icon aria-label="settings">settings</mat-icon>
+              </button>
+          </div>
+          <div class="mat-menu-body">
+              <!-- <mat-list>
+                  <mat-list-item>
+
+                      <div mat-line class="d-flex">
+                          <div class="m-icon">
+                              <img src="https://lh5.googleusercontent.com/-dgVHb2eFVcQ/AAAAAAAAAAI/AAAAAAAAAAA/r1Ki2m6hU2k/s96-c-mo/photo.jpg" alt="">
+                          </div>
+                          <div class="m-info">
+                              <h4 class="info-title">Lorem ipsum dolor sit.</h4>
+                              <p class="info-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate? </p>
+                              <p class="info-date">Oct 24 2018</p>
+                          </div>
+                      </div>
+                      <div (click)="$event.stopPropagation();">
+                          <mat-menu #moreMenu="matMenu">
+                              <button mat-menu-item>Settings</button>
+                              <button mat-menu-item>Help</button>
+                          </mat-menu>
+
+                          <button mat-icon-button [matMenuTriggerFor]="moreMenu" class="more-menu">
+                            <mat-icon>more_vert</mat-icon>
+                          </button>
+                      </div>
+                  </mat-list-item>
+                  <mat-list-item>
+
+                      <div mat-line class="d-flex">
+                          <div class="m-icon">
+                              <img src="https://lh5.googleusercontent.com/-dgVHb2eFVcQ/AAAAAAAAAAI/AAAAAAAAAAA/r1Ki2m6hU2k/s96-c-mo/photo.jpg" alt="">
+                          </div>
+                          <div class="m-info">
+                              <h4 class="info-title">Lorem ipsum dolor sit.</h4>
+                              <p class="info-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate? </p>
+                              <p class="info-date">Oct 24 2018</p>
+                          </div>
+                      </div>
+                      <div (click)="$event.stopPropagation();">
+                          <mat-menu #moreMenu="matMenu">
+                              <button mat-menu-item>Settings</button>
+                              <button mat-menu-item>Help</button>
+                          </mat-menu>
+
+                          <button mat-icon-button [matMenuTriggerFor]="moreMenu" class="more-menu">
+                            <mat-icon>more_vert</mat-icon>
+                          </button>
+                      </div>
+                  </mat-list-item>
+                  <mat-list-item>
+
+                      <div mat-line class="d-flex">
+                          <div class="m-icon">
+                              <img src="https://lh5.googleusercontent.com/-dgVHb2eFVcQ/AAAAAAAAAAI/AAAAAAAAAAA/r1Ki2m6hU2k/s96-c-mo/photo.jpg" alt="">
+                          </div>
+                          <div class="m-info">
+                              <h4 class="info-title">Lorem ipsum dolor sit.</h4>
+                              <p class="info-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate? </p>
+                              <p class="info-date">Oct 24 2018</p>
+                          </div>
+                      </div>
+                      <div (click)="$event.stopPropagation();">
+                          <mat-menu #moreMenu="matMenu">
+                              <button mat-menu-item>Settings</button>
+                              <button mat-menu-item>Help</button>
+                          </mat-menu>
+
+                          <button mat-icon-button [matMenuTriggerFor]="moreMenu" class="more-menu">
+                            <mat-icon>more_vert</mat-icon>
+                          </button>
+                      </div>
+                  </mat-list-item>
+                  <mat-list-item>
+
+                      <div mat-line class="d-flex">
+                          <div class="m-icon">
+                              <img src="https://lh5.googleusercontent.com/-dgVHb2eFVcQ/AAAAAAAAAAI/AAAAAAAAAAA/r1Ki2m6hU2k/s96-c-mo/photo.jpg" alt="">
+                          </div>
+                          <div class="m-info">
+                              <h4 class="info-title">Lorem ipsum dolor sit.</h4>
+                              <p class="info-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate? </p>
+                              <p class="info-date">Oct 24 2018</p>
+                          </div>
+                      </div>
+                      <div (click)="$event.stopPropagation();">
+                          <mat-menu #moreMenu="matMenu">
+                              <button mat-menu-item>Settings</button>
+                              <button mat-menu-item>Help</button>
+                          </mat-menu>
+
+                          <button mat-icon-button [matMenuTriggerFor]="moreMenu" class="more-menu">
+                            <mat-icon>more_vert</mat-icon>
+                          </button>
+                      </div>
+                  </mat-list-item>
+                  <mat-list-item>
+
+                      <div mat-line class="d-flex">
+                          <div class="m-icon">
+                              <img src="https://lh5.googleusercontent.com/-dgVHb2eFVcQ/AAAAAAAAAAI/AAAAAAAAAAA/r1Ki2m6hU2k/s96-c-mo/photo.jpg" alt="">
+                          </div>
+                          <div class="m-info">
+                              <h4 class="info-title">Lorem ipsum dolor sit.</h4>
+                              <p class="info-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate? </p>
+                              <p class="info-date">Oct 24 2018</p>
+                          </div>
+                      </div>
+                      <div (click)="$event.stopPropagation();">
+                          <mat-menu #moreMenu="matMenu">
+                              <button mat-menu-item>Settings</button>
+                              <button mat-menu-item>Help</button>
+                          </mat-menu>
+
+                          <button mat-icon-button [matMenuTriggerFor]="moreMenu" class="more-menu">
+                            <mat-icon>more_vert</mat-icon>
+                          </button>
+                      </div>
+                  </mat-list-item>
+                  <mat-list-item>
+
+                      <div mat-line class="d-flex">
+                          <div class="m-icon">
+                              <img src="https://lh5.googleusercontent.com/-dgVHb2eFVcQ/AAAAAAAAAAI/AAAAAAAAAAA/r1Ki2m6hU2k/s96-c-mo/photo.jpg" alt="">
+                          </div>
+                          <div class="m-info">
+                              <h4 class="info-title">Lorem ipsum dolor sit.</h4>
+                              <p class="info-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate? </p>
+                              <p class="info-date">Oct 24 2018</p>
+                          </div>
+                      </div>
+                      <div (click)="$event.stopPropagation();">
+                          <mat-menu #moreMenu="matMenu">
+                              <button mat-menu-item>Settings</button>
+                              <button mat-menu-item>Help</button>
+                          </mat-menu>
+
+                          <button mat-icon-button [matMenuTriggerFor]="moreMenu" class="more-menu">
+                            <mat-icon>more_vert</mat-icon>
+                          </button>
+                      </div>
+                  </mat-list-item>
+
+              </mat-list> -->
+              <p class="text-center p-4">No Notifications</p>
+         
+          </div>
+      </mat-menu>
+
+      <!-- <div class="displayName">
+          <span>{{displayName}}</span>
+      </div>
+      <div class="avatar" *ngIf="avatar">
+          <img [src]="avatar" [alt]="displayName">
+      </div> -->
+      <button mat-icon-button [matMenuTriggerFor]="menuuser" class="cs-mat-menu-item" style="margin-right:0 !important">
+              <!-- <mat-icon aria-label="person_outline">person</mat-icon> -->
+              
+              <div class="click-avatar">
+                  <img src="https://firebasestorage.googleapis.com/v0/b/puconline-c176c.appspot.com/o/avata%2Fphoto-1512904384.jpeg?alt=media&token=de1dd163-40e2-4117-8a6e-522b66f85e95"
+                  alt="">
+              </div>
+            </button>
+            <mat-menu #menuuser="matMenu" class="cs-matmenu-content auto user-menu-content" backdropClass="cs-matmenu-backdrop">
+              <div class="mat-menu-bar" (click)="$event.stopPropagation();">
+                <div class="d-flex">
+                  <div class="mat-user-avatar">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/puconline-c176c.appspot.com/o/avata%2Fphoto-1512904384.jpeg?alt=media&token=de1dd163-40e2-4117-8a6e-522b66f85e95"
+                      alt="">
+                  </div>
+                  <div class="mat-user-info">
+                    <!-- <h3>{{env?.user?.displayName}}</h3>
+                    <p>{{env?.user?.email}}</p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="mat-menu-body">
+                <mat-list>
+                  <mat-list-item (click)="logOut()">
+                    <mat-icon mat-list-icon class="app-icon black">input</mat-icon>
+                    <div mat-line class="d-flex">
+                      Sign Out
+                    </div>
+                  </mat-list-item>
+                  <mat-divider></mat-divider>
+                  <mat-list-item>
+                    <mat-icon mat-list-icon class="app-icon black">payment</mat-icon>
+                    <div mat-line class="d-flex">
+                          PUC Music
+                    </div>
+                  </mat-list-item>
+                  <mat-list-item>
+                    <mat-icon mat-list-icon class="app-icon black">settings_system_daydream</mat-icon>
+                    <div mat-line class="d-flex">
+                      PUC Kids
+                    </div>
+                  </mat-list-item>
+                  <mat-divider></mat-divider>
+                  <mat-list-item>
+                    <mat-icon mat-list-icon class="app-icon black">account_balance_wallet</mat-icon>
+                    <div mat-line class="d-flex">
+                      Creator Academy
+                    </div>
+                  </mat-list-item>
+                  <mat-list-item>
+                    <mat-icon mat-list-icon class="app-icon black">donut_small</mat-icon>
+                    <div mat-line class="d-flex">
+                          PUC School
+                    </div>
+                  </mat-list-item>
+                </mat-list>
+              </div>
+            </mat-menu>
+
+
+  </div>
+</nav>
