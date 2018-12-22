@@ -1,0 +1,90 @@
+.filter-section {
+  padding: 18px 24px;
+  position: sticky;
+  top: 103px;
+  background-color: #039be5;
+  .form-wrapper {
+    padding: 0;
+    .form {
+      display: flex;
+      align-items: center;
+    }
+    .field {
+      flex: 1;
+    }
+  }
+  .ui.form .field > label {
+    color: #fff;
+  }
+}
+
+.report-wrapper {
+  padding: 24px;
+  .print-button {
+    &.fixed {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+    }
+  }
+}
+
+.print-wrapper {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 4px;
+  .sheet {
+    max-width: 1100px;
+    margin: 0 auto;
+    .logo-block {
+      width: 108px;
+      height: 108px;
+      margin: 0 auto;
+      img {
+        width: 100%;
+      }
+    }
+    .sheet-content {
+    }
+    .report-header {
+    }
+    .report-body {
+    }
+    .listing-table {
+      width: 100%;
+      th {
+        text-transform: uppercase;
+      }
+      .no,
+      .status,
+      .type {
+        display: inline-flex;
+        background-color: #fead01;
+        padding: 4px;
+        border-radius: 50%;
+        min-width: 28px;
+        align-items: center;
+        justify-content: center;
+      }
+      .status {
+        background-color: #fead01;
+        border-radius: 26px;
+        padding: 4px 16px;
+        &.green {
+          background-color: greenyellow;
+        }
+      }
+      .type {
+        background-color: greenyellow;
+        border-radius: 26px;
+        padding: 4px 16px;
+      }
+    }
+  }
+  .recept-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 24px;
+  }
+}

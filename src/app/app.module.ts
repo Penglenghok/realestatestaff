@@ -7,6 +7,9 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LayoutComponent } from './shared/layout/layout.component';
 import { DashboardNavComponent } from './components/dashboard-nav/dashboard-nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './module/material.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MobxAngularModule } from 'mobx-angular';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MaterialModule,
+    MobxAngularModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,65 @@
+@media print {
+    .tsc-top-header {
+        display: none;
+    }
+    .page-break {
+        page-break-after: always;
+        border: 1px solid #444;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .tsc-table {
+        /* page-break-after: always; */
+    }
+    .tsc-body {
+        page-break-after: always;
+        page-break-inside: inherit;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
+    @page {
+        size: A4;
+        padding: 0;
+        margin-left: 0.5cm;
+        margin-right: 0.5cm;
+        margin-top: 6cm;
+        margin-bottom: 0.8cm;
+    }
+    tr,
+    td,
+    th {
+        page-break-inside: avoid;
+    }
+    .divanscript-wrapper {
+        padding: 0;
+    }
+    .sheet {
+        position: relative;
+    }
+    .sheet-content {
+        position: relative;
+    }
+    .min-max-name {
+        width: 500px !important;
+    }
+    .en-title {}
+    .kh-title {
+        font-family: 'Moul', cursive;
+    }
+    .otosr {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .addr {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .off-title {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .tsc-table-header {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .tsc-table {
+        font-family: 'Times New Roman', Times, serif;
+    }
+}

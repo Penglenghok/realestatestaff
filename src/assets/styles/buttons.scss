@@ -1,0 +1,199 @@
+.enbutton {
+    padding: 0 1.2em;
+    border: 1px solid transparent;
+    vertical-align: baseline;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 16px;
+    height: 40px;
+    cursor: pointer;
+    zoom: 1;
+    display: inline-flex;
+    align-items: center;
+    line-height: 40px;
+    justify-content: center;
+    outline: none;
+    border-radius: 100px;
+    background: linear-gradient(to bottom, #fff, #f9fafb);
+    box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0.05);
+    transition: background-color 80ms linear;
+    user-select: none;
+    position: relative;
+    font-family: "Google Sans", sans-serif;
+    &.radius {
+        border-radius: 25px;
+    }
+    &.add-button {
+        display: inline-block;
+        padding: 5px 22px;
+        background: $primary;
+        line-height: normal;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: capitalize;
+        cursor: pointer;
+        outline: none;
+        transition: box-shadow 0.3s;
+        color: #fff;
+        &:hover {
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+        }
+    }
+    &.block {
+        display: block;
+        width: 100%;
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+    &.mat-primary {
+        border: none;
+        background: $primary;
+        border-radius: 25px;
+        text-decoration: none;
+        padding: 0 24px;
+        color: #fff;
+        &:hover {
+            background: $hoverPrimary;
+            cursor: pointer;
+        }
+    }
+    &.primary {
+        border: none;
+        background: $darkPrimary;
+        border-radius: 25px;
+        text-decoration: none;
+        padding: 0 24px;
+        color: #fff;
+        &.btn-mr {
+            margin-right: 16px;
+        }
+    }
+    &:disabled {
+        background: #72a1c7;
+        cursor: default;
+        &:hover {
+            cursor: default;
+            background-color: #72a1c7;
+        }
+    }
+    &.cancel {
+        color: #212b36;
+        border-radius: 100px;
+        background: linear-gradient(180deg, #fff, #f9fafb);
+        border: 0.1rem solid #c4cdd5;
+        box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0.05);
+        &:hover {
+            background: linear-gradient(180deg, #f9fafb, #f4f6f8);
+            border-color: #c4cdd5;
+        }
+        &:active {
+            background: linear-gradient(180deg, #f4f6f8, #f4f6f8);
+            border-color: #c4cdd5;
+            box-shadow: 0 0 0 0 transparent, inset 0 1px 1px 0 rgba(99, 115, 129, 0.1), inset 0 1px 4px 0 rgba(99, 115, 129, 0.2);
+        }
+    }
+    &.delete-btn {
+        background: #EA4335;
+        border-radius: 2px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 100px;
+    }
+}
+
+.m-r16 {
+    margin-right: 16px !important;
+}
+
+.action-bg {
+    height: 24px;
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+.delete-btn {
+    border: none;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+    i {
+        color: #666;
+        font-size: 24px;
+    }
+    &.absolute {
+        position: absolute;
+        right: 44px;
+        top: 0;
+    }
+}
+
+.sc-btn {
+    width: 38px;
+    height: 38px;
+    border: none;
+    outline: none;
+    display: inline-flex;
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    text-indent: -999999px;
+    margin: 4px;
+    cursor: pointer;
+    &.google {
+        background-image: url("/../assets/images/google.svg");
+    }
+    &.fb {
+        background-image: url("/../assets/images/fb.svg");
+    }
+    &.in {
+        background-image: url("/../assets/images/in.svg");
+    }
+    &.tw {
+        background-image: url("/../assets/images/tw.svg");
+    }
+}
+
+.pd0 {
+    padding: 0 !important;
+}
+
+.input-file [type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.input-file label {
+    color: #f1f1f1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.ui.form {
+    .enbutton.primary {
+        background: $primary;
+        &:disabled {
+            color: rgba(0, 0, 0, 0.26);
+            background-color: rgba(0, 0, 0, 0.12);
+            &:hover {
+                color: rgba(0, 0, 0, 0.26);
+                background-color: rgba(0, 0, 0, 0.12);
+            }
+        }
+        &:hover {
+            background: $hoverPrimary;
+        }
+    }
+}

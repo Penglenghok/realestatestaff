@@ -12,8 +12,17 @@ import {
 })
 export class DashboardComponent implements OnInit {
   form: FormGroup;
-  constructor() { }
+  constructor(private fb:FormBuilder) { }
   ngOnInit() {
+    this.form=this.fb.group({
+      searchType:[],
+      search:[]
+    })
+  }
+  compareObjects(o1: any, o2: any): boolean {
+    if (o2) {
+      return o1.text === o2.text;
+    }
   }
 
 }
