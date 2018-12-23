@@ -1,0 +1,9 @@
+.containerflex{
+    height: calc(100vh - 64px);
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}

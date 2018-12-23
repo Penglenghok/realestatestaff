@@ -172,15 +172,13 @@ body {
 }
 
 .task-wrapper {
-    height: 100%;
+    height: calc(100vh - 64px);
     position: relative;
     width: 100%;
     display: flex;
     align-items: center;
     // justify-content: center;
     flex-direction: column;
-    padding-top: 64px;
-    padding-bottom: 136px;
     h2 {
         margin-bottom: 40px;
         font-size: 42px;
@@ -213,9 +211,7 @@ body {
     .task-content {
         justify-content: center;
         align-items: center;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2em;
+        display: flex;
     }
     .task-item {
         display: inline-flex;
@@ -224,6 +220,7 @@ body {
         cursor: pointer;
         flex-direction: column;
         outline: none;
+        padding-right: $padding;
     }
     .task-icon {
         height: 142px;
@@ -270,7 +267,7 @@ body {
         cursor: pointer;
         color: #333;
         font-weight: 300;
-        font-size: 1.5em;
+        font-size: 20px;
         margin: 14px 0;
     }
 }

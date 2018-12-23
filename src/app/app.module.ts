@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './module/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MobxAngularModule } from 'mobx-angular';
+import { NewClientComponent } from './pages/new-client/new-client.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MobxAngularModule } from 'mobx-angular';
     DashboardComponent,
     LayoutComponent,
     DashboardNavComponent,
+    NewClientComponent,
   ],
   imports: [
     BrowserModule,

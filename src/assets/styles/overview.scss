@@ -450,7 +450,7 @@
 
 .search-engine {
   margin-bottom: 50px;
-  width: 100%;
+  width: calc(100vw - (2 * #{$padding}));
   display: flex;
   flex-direction: column;
   justify-content: center;
